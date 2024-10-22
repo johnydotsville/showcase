@@ -1,16 +1,374 @@
 <!doctype html>
-<html lang="ru">
+<html>
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>Документ</title>
-    <meta name="description" content="Описание страницы" />
-    <meta
-	  name="keywords"
-	  content="ключевое слово 1, ключевое слово 2"
-	/>
+    <meta charset="UTF-8">
+    <title>Тренировка css</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
   </head>
   <body>
-    <p>Теперь все более-менее нормальные демки можно хранить в репозитории, а не на компе.</p>
+    <div class="container">
+      <div class="header">
+        <div class="navbar">
+          <div class="navbar__menu navbar__section">
+            <button class="menu-button button button_rounded">
+              <i class="button__text uil uil-bars"></i>
+            </button>
+            <a href="#" class="logo">
+              <img src="img/interface/logo.png" class="logo__image">
+              <h2 class="logo__text">itude</h2>
+            </a>
+          </div>
+          <div class="navbar__search navbar__section">
+            <form action="#" class="search-form">
+              <input class="search-form__query-input" placeholder="Введите запрос..." type="search" required>
+              <button class="search-form__find-button button">
+                <i class="button__text uil uil-search"></i>
+              </button>
+            </form>
+            <button class="voice-search-button button button_rounded">
+              <i class="button__text uil uil-microphone"></i>
+            </button>
+          </div>
+          <div class="navbar__login navbar__section">
+            <button class="theme-button button button_rounded">
+              <i class="button__text uil uil-moon"></i>
+            </button>
+            <!-- Поспрашивать, как такую кнопку лучше сделать. Приходится дублировать в картинке свойства для закругления -->
+            <button class="login-button button button_rounded">
+              <img class="login-button__userpic" src="./img/interface/userpic.png">
+            </button>
+          </div>
+        </div>
+      </div>
+      <aside class="sidebar">
+        <div class="links-section">
+          <div class="links-group">
+            <a href="#" class="link">
+              <i class="link__symbol uil uil-estate"></i> Home
+            </a>
+            <a href="#" class="link">
+              <i class="link__symbol uil uil-video"></i> Shorts
+            </a>
+            <a href="#" class="link">
+              <i class="link__symbol uil uil-tv-retro"></i> Subscriptions
+            </a>
+          </div>
+          <div class="separator"></div>
+          <div class="links-group">
+            <div class="links-group__title">You</div>
+            <a href="#" class="link">
+              <i class="link__symbol uil uil-user-square"></i> Your channel
+            </a>
+            <a href="#" class="link">
+              <i class="link__symbol uil uil-history"></i> History
+            </a>
+            <a href="#" class="link">
+              <i class="link__symbol uil uil-clock"></i> Watch later
+            </a>
+          </div>
+          <div class="separator"></div>
+          <div class="links-group">
+            <div class="links-group__title">Explore</div>
+            <a href="#" class="link">
+              <i class="link__symbol uil uil-fire"></i> Trending
+            </a>
+            <a href="#" class="link">
+              <i class="link__symbol uil uil-music"></i> Music
+            </a>
+            <a href="#" class="link">
+              <i class="link__symbol uil uil-basketball"></i> Gaming
+            </a>
+            <a href="#" class="link">
+              <i class="link__symbol uil uil-trophy"></i> Sports
+            </a>
+          </div>
+          <div class="separator"></div>
+          <div class="links-group">
+            <div class="links-group__title">More from itude</div>
+            <a href="#" class="link">
+              <i class="link__symbol uil uil-shield-plus"></i> itude Plus
+            </a>
+            <a href="#" class="link">
+              <i class="link__symbol uil uil-headphones-alt"></i> itude Music
+            </a>
+            <a href="#" class="link">
+              <i class="link__symbol uil uil-airplay"></i> itude Kids
+            </a>
+          </div>
+          <div class="separator"></div>
+          <div class="links-group">
+            <a href="#" class="link">
+              <i class="link__symbol uil-setting"></i> Settings
+            </a>
+            <a href="#" class="link">
+              <i class="link__symbol uil uil-file-medical-alt"></i> Report
+            </a>
+            <a href="#" class="link">
+              <i class="link__symbol uil uil-question-circle"></i> Help
+            </a>
+            <a href="#" class="link">
+              <i class="link__symbol uil uil-exclamation-triangle"></i> Feedback
+            </a>
+          </div>
+        </div>
+      </aside>
+      <div class="main-content">
+        <div class="category-list">
+          <button class="category-button button active">All</button>
+          <button class="category-button button">Website</button>
+          <button class="category-button button">Music</button>
+          <button class="category-button button">Gaming</button>
+          <button class="category-button button">Node.js</button>
+          <button class="category-button button">JavaScript</button>
+          <button class="category-button button">React.js</button>
+          <!-- <button class="category-button button">TypeScript</button>
+          <button class="category-button button">Coding</button>
+          <button class="category-button button">Next.js</button>
+          <button class="category-button button">Data analysis</button>
+          <button class="category-button button">Web design</button>
+          <button class="category-button button">HTML</button>
+          <button class="category-button button">Tailwind</button>
+          <button class="category-button button">CSS</button>
+          <button class="category-button button">Express.js</button> -->
+        </div>
+        <div class="video-list">
+          <div class="video-card">
+            <a class="video-card__thumbnail" href="#">
+              <img class="video-card__picture" src="./img/preview/01.png" />
+              <div class="video-card__duration">10:54</div>
+            </a>
+            <div class="video-card__footer">
+              <img class="video-card__channel-logo" src="./img/interface/logo.png" />
+              <div class="video-card__info">
+                <a class="video-card__video-title" href="#">Ночная улица какого-то города в каком-то азиатском государстве</a>
+                <a class="video-card__channel-name" href="#">Homecoding</a>
+                <div class="video-card__views">
+                  1k просмотров • 4 мес. назад
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="video-card">
+            <a class="video-card__thumbnail" href="#">
+              <img class="video-card__picture" src="./img/preview/02.png" />
+              <div class="video-card__duration">10:54</div>
+            </a>
+            <div class="video-card__footer">
+              <img class="video-card__channel-logo" src="./img/interface/logo.png" />
+              <div class="video-card__info">
+                <a class="video-card__video-title" href="#">Оставил мопед на стройке</a>
+                <a class="video-card__channel-name" href="#">Homecoding</a>
+                <div class="video-card__views">
+                  1k просмотров • 4 мес. назад
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="video-card">
+            <a class="video-card__thumbnail" href="#">
+              <img class="video-card__picture" src="./img/preview/03.png" />
+              <div class="video-card__duration">10:54</div>
+            </a>
+            <div class="video-card__footer">
+              <img class="video-card__channel-logo" src="./img/interface/logo.png" />
+              <div class="video-card__info">
+                <a class="video-card__video-title" href="#">Ночная улица какого-то города в каком-то азиатском государстве</a>
+                <a class="video-card__channel-name" href="#">Homecoding</a>
+                <div class="video-card__views">
+                  1k просмотров • 4 мес. назад
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="video-card">
+            <a class="video-card__thumbnail" href="#">
+              <img class="video-card__picture" src="./img/preview/04.png" />
+              <div class="video-card__duration">10:54</div>
+            </a>
+            <div class="video-card__footer">
+              <img class="video-card__channel-logo" src="./img/interface/logo.png" />
+              <div class="video-card__info">
+                <a class="video-card__video-title" href="#">Ночная улица какого-то города в каком-то азиатском государстве</a>
+                <a class="video-card__channel-name" href="#">Homecoding</a>
+                <div class="video-card__views">
+                  1k просмотров • 4 мес. назад
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="video-card">
+            <a class="video-card__thumbnail" href="#">
+              <img class="video-card__picture" src="./img/preview/05.png" />
+              <div class="video-card__duration">10:54</div>
+            </a>
+            <div class="video-card__footer">
+              <img class="video-card__channel-logo" src="./img/interface/logo.png" />
+              <div class="video-card__info">
+                <a class="video-card__video-title" href="#">Ночная улица какого-то города в каком-то азиатском государстве</a>
+                <a class="video-card__channel-name" href="#">Homecoding</a>
+                <div class="video-card__views">
+                  1k просмотров • 4 мес. назад
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="video-card">
+            <a class="video-card__thumbnail" href="#">
+              <img class="video-card__picture" src="./img/preview/06.png" />
+              <div class="video-card__duration">10:54</div>
+            </a>
+            <div class="video-card__footer">
+              <img class="video-card__channel-logo" src="./img/interface/logo.png" />
+              <div class="video-card__info">
+                <a class="video-card__video-title" href="#">Ночная улица какого-то города в каком-то азиатском государстве</a>
+                <a class="video-card__channel-name" href="#">Homecoding</a>
+                <div class="video-card__views">
+                  1k просмотров • 4 мес. назад
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="video-card">
+            <a class="video-card__thumbnail" href="#">
+              <img class="video-card__picture" src="./img/preview/07.png" />
+              <div class="video-card__duration">10:54</div>
+            </a>
+            <div class="video-card__footer">
+              <img class="video-card__channel-logo" src="./img/interface/logo.png" />
+              <div class="video-card__info">
+                <a class="video-card__video-title" href="#">Ночная улица какого-то города в каком-то азиатском государстве</a>
+                <a class="video-card__channel-name" href="#">Homecoding</a>
+                <div class="video-card__views">
+                  1k просмотров • 4 мес. назад
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="video-card">
+            <a class="video-card__thumbnail" href="#">
+              <img class="video-card__picture" src="./img/preview/08.png" />
+              <div class="video-card__duration">10:54</div>
+            </a>
+            <div class="video-card__footer">
+              <img class="video-card__channel-logo" src="./img/interface/logo.png" />
+              <div class="video-card__info">
+                <a class="video-card__video-title" href="#">Ночная улица какого-то города в каком-то азиатском государстве</a>
+                <a class="video-card__channel-name" href="#">Homecoding</a>
+                <div class="video-card__views">
+                  1k просмотров • 4 мес. назад
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="video-card">
+            <a class="video-card__thumbnail" href="#">
+              <img class="video-card__picture" src="./img/preview/09.png" />
+              <div class="video-card__duration">10:54</div>
+            </a>
+            <div class="video-card__footer">
+              <img class="video-card__channel-logo" src="./img/interface/logo.png" />
+              <div class="video-card__info">
+                <a class="video-card__video-title" href="#">Ночная улица какого-то города в каком-то азиатском государстве</a>
+                <a class="video-card__channel-name" href="#">Homecoding</a>
+                <div class="video-card__views">
+                  1k просмотров • 4 мес. назад
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="video-card">
+            <a class="video-card__thumbnail" href="#">
+              <img class="video-card__picture" src="./img/preview/10.png" />
+              <div class="video-card__duration">10:54</div>
+            </a>
+            <div class="video-card__footer">
+              <img class="video-card__channel-logo" src="./img/interface/logo.png" />
+              <div class="video-card__info">
+                <a class="video-card__video-title" href="#">Ночная улица какого-то города в каком-то азиатском государстве</a>
+                <a class="video-card__channel-name" href="#">Homecoding</a>
+                <div class="video-card__views">
+                  1k просмотров • 4 мес. назад
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="video-card">
+            <a class="video-card__thumbnail" href="#">
+              <img class="video-card__picture" src="./img/preview/11.png" />
+              <div class="video-card__duration">10:54</div>
+            </a>
+            <div class="video-card__footer">
+              <img class="video-card__channel-logo" src="./img/interface/logo.png" />
+              <div class="video-card__info">
+                <a class="video-card__video-title" href="#">Ночная улица какого-то города в каком-то азиатском государстве</a>
+                <a class="video-card__channel-name" href="#">Homecoding</a>
+                <div class="video-card__views">
+                  1k просмотров • 4 мес. назад
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="video-card">
+            <a class="video-card__thumbnail" href="#">
+              <img class="video-card__picture" src="./img/preview/12.png" />
+              <div class="video-card__duration">10:54</div>
+            </a>
+            <div class="video-card__footer">
+              <img class="video-card__channel-logo" src="./img/interface/logo.png" />
+              <div class="video-card__info">
+                <a class="video-card__video-title" href="#">Ночная улица какого-то города в каком-то азиатском государстве</a>
+                <a class="video-card__channel-name" href="#">Homecoding</a>
+                <div class="video-card__views">
+                  1k просмотров • 4 мес. назад
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="video-card">
+            <a class="video-card__thumbnail" href="#">
+              <img class="video-card__picture" src="./img/preview/13.png" />
+              <div class="video-card__duration">10:54</div>
+            </a>
+            <div class="video-card__footer">
+              <img class="video-card__channel-logo" src="./img/interface/logo.png" />
+              <div class="video-card__info">
+                <a class="video-card__video-title" href="#">Ночная улица какого-то города в каком-то азиатском государстве</a>
+                <a class="video-card__channel-name" href="#">Homecoding</a>
+                <div class="video-card__views">
+                  1k просмотров • 4 мес. назад
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="video-card">
+            <a class="video-card__thumbnail" href="#">
+              <img class="video-card__picture" src="./img/preview/14.png" />
+              <div class="video-card__duration">10:54</div>
+            </a>
+            <div class="video-card__footer">
+              <img class="video-card__channel-logo" src="./img/interface/logo.png" />
+              <div class="video-card__info">
+                <a class="video-card__video-title" href="#">Ночная улица какого-то города в каком-то азиатском государстве</a>
+                <a class="video-card__channel-name" href="#">Homecoding</a>
+                <div class="video-card__views">
+                  1k просмотров • 4 мес. назад
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- <div>
+        TODO:
+        <ul>
+          <li>* Сделать переключение отображения видео: сеткой или в строку</li>
+        <ul>
+      </div>
+      <div>
+        Место для экспериментов.
+      </div> -->
+    </div>
   </body>
 </html>
+
